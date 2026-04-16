@@ -1,0 +1,111 @@
+{
+  "states": [
+    {
+      "id": 1,
+      "x": 1064,
+      "y": 369,
+      "label": "SEGUIMIENTO",
+      "action": "",
+      "startAction": "",
+      "radius": 100,
+      "isStart": false,
+      "isPseudostate": false
+    },
+    {
+      "id": 2,
+      "x": 1164,
+      "y": 954,
+      "label": "ESPERA",
+      "action": "",
+      "startAction": "",
+      "radius": 80,
+      "isStart": false,
+      "isPseudostate": false
+    },
+    {
+      "id": 4,
+      "x": 273,
+      "y": 485,
+      "label": "BARRIDO",
+      "action": "",
+      "startAction": "MAX_CONTADOR=30",
+      "radius": 125,
+      "isStart": true,
+      "isPseudostate": false
+    }
+  ],
+  "transitions": [
+    {
+      "from": 4,
+      "to": 1,
+      "label": "DETECTADO[UN_SENSOR=1]",
+      "action": "",
+      "controlOffset": {
+        "x": 42,
+        "y": -162
+      },
+      "startAnchorAngle": -0.19612167518864182,
+      "endAnchorAngle": -3.0140830953745548,
+      "labelOffset": {
+        "x": 28,
+        "y": -50
+      }
+    },
+    {
+      "from": 2,
+      "to": 2,
+      "label": "TICK[ticks > 0]",
+      "action": "ticks=ticks-1",
+      "controlOffset": {
+        "x": 144,
+        "y": 94.5
+      },
+      "startAnchorAngle": -0.24497866312686414,
+      "endAnchorAngle": 1.4056476493802699,
+      "labelOffset": {
+        "x": 171,
+        "y": -9
+      }
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "DETECTADO[AMBOS_SENSORES=1]",
+      "action": "ticks=MAX_CONTADOR",
+      "controlOffset": {
+        "x": 238,
+        "y": -130
+      },
+      "startAnchorAngle": 0.3246323907991536,
+      "endAnchorAngle": -1.3054642405859118,
+      "labelOffset": {
+        "x": 268,
+        "y": 42
+      }
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "label": "TICK[ticks <= 0]",
+      "action": "",
+      "controlOffset": {
+        "x": -316,
+        "y": 334
+      },
+      "startAnchorAngle": 2.22787126250655,
+      "endAnchorAngle": 1.6172744581458998,
+      "labelOffset": {
+        "x": -53,
+        "y": 76
+      }
+    }
+  ],
+  "stateIdCounter": 5,
+  "isDarkTheme": true,
+  "simContext": {
+    "ticks": 30,
+    "MAX_CONTADOR": 30,
+    "AMBOS_SENSORES": 0,
+    "UN_SENSOR": 0
+  }
+}
