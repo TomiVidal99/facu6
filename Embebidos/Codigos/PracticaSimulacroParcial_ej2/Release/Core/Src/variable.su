@@ -1,0 +1,4 @@
+../Core/Src/variable.c:13:6:var_init	8	static
+../Core/Src/variable.c:26:6:var_set_val	8	static
+../Core/Src/variable.c:34:6:var_ack_alarm	8	static
+../Core/Src/variable.c:40:10:var_get_state	0	static

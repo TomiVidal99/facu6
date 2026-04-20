@@ -22,7 +22,7 @@
 
 ## Instrumentación
 
-- [ ] .
+- [ ] Sensibilidad, cómo la obtiene ese cociente? por qué es gauseano?.
 
 ## Legal
 

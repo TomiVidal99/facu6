@@ -1,0 +1,7 @@
+../Core/Src/main.c:152:6:SystemClock_Config	88	static,ignoring_inline_asm
+../Core/Src/main.c:313:6:ADC_read	8	static
+../Core/Src/main.c:78:5:main	56	static,ignoring_inline_asm
+../Core/Src/main.c:319:6:print_uart_message	32	static
+../Core/Src/main.c:340:6:read_btn	8	static
+../Core/Src/main.c:345:10:abs	0	static
+../Core/Src/main.c:358:6:Error_Handler	0	static,ignoring_inline_asm
