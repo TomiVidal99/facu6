@@ -104,12 +104,12 @@
 
 // Document content
 #project(
-  title: "Propuesta",
+  title: "Informe Trabajo Logix Pro",
   sub: "Instrumentación y control Industrial",
   authors: (
     "Tomás Vidal (69854/4)",
   ),
-  date: "6 de Mayo de 2026",
+  date: "15 de Mayo de 2026",
 )[
 
   = Tema elegido
@@ -118,17 +118,15 @@
 
   = Modo de operación A
 
-  En este modo de operación sólo uno de los motores es empleado para cargar el compresor, la idea es que sea un modo de operación de alta eficiencia y baja presión. Entonces se automatiza este motor para que cada vez que la presión caiga por debajo de cierto límite, el mismo se enciende, y luego de que se llega a cierto límite el motor se apaga. Es un modo que mantiene la presión en un cierto rango, si la presión cae por debajo de ese rango y el motor estaba apagado, hay que activar manualmente con "START" el motor para que comience la carga automática.
-
-  // hay que hacer el diagrama de escalera y además otro con explicaciones de qué es cada cosa
+  En este modo de operación el *motor A* se automatiza para que regule la presión en un rango seleccionado con el sensor de presión, el motor se activa y desactiva para mantener el nivel de presión.
 
   = Modo de operación B
 
-  En este modo se emplean los dos motores en vez de uno solo, es lo mismo que antes pero con los dos motores, la idea es que sea un modo de alta presión y performance, para lo cual se emplea otro sensor de presión, con los parámetros ajustados a mayores valores que antes.
+  Este modo es prácticamente lo mismo que el *modo de operación A*, simplemente que sólo se activa el otro motor (B).
 
   = Modo de operación C
 
-  Y este modo es un balance entre los dos anteriores, para un cierto bajo nivel de presión se activan los dos motores (cuando el sensor de más baja presión está activo, pero el de más alta presión no), haciendo que la presión eleve rápidamente, luego llegado cierto nivel de presión, solo se activa uno de los motores para completar el nivel de presión deseado, posteriormente se apaga el motor.
+  En este modo de operación ambos motores se activan y desactivan simultáneamente para regular un nivel de presión dentro de un rango.
 
 // #align(center)[
 //     #figure(
