@@ -1,0 +1,2 @@
+../Core/Src/signal_proc.c:15:6:SP_AddSample	8	static
+../Core/Src/signal_proc.c:21:10:SP_GetAverage	0	static

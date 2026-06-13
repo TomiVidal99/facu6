@@ -1,0 +1,3 @@
+../Core/Src/signal_proc.c:18:6:SP_AddSample	16	static
+../Core/Src/signal_proc.c:24:10:SP_GetAverage	16	static
+../Core/Src/signal_proc.c:40:6:SP_RegisterAlert	16	static
