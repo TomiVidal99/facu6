@@ -144,11 +144,11 @@
 
   = Diseño y selección del sistema de seguridad
 
-  La estación robotizada deberá encontrarse rodeada por una barrera física metálica para impedir el acceso accidental al área de trabajo del manipulador. Debido a que existen zonas de acceso para mantenimiento y para el reemplazo de cajas, se implementarán distintos dispositivos de seguridad según la función de cada acceso.
+  La estación robotizada deberá encontrarse rodeada por una barrera física metálica que va a impedir el acceso accidental al área de trabajo del manipulador. Dado que existen zonas de acceso para mantenimiento y para el reemplazo de cajas, se implementará distintos dispositivos de seguridad según la función de cada acceso.
 
   == Barrera perimetral
 
-  Se utilizará un cerramiento de malla metálica industrial de aproximadamente 2 m de altura rodeando completamente la estación.
+  Se utilizará un cerramiento de malla metálica industrial de aproximadamente 2 m de altura rodeando completamnente la estación.
 
   Su función es impedir el ingreso de personas al área de trabajo mientras el robot se encuentra en funcionamiento.
 
@@ -165,7 +165,7 @@
 
   Funcionamiento:
 
-  Cuando la puerta se abre, el sistema de seguridad elimina inmediatamente la energía de movimiento del robot y de la cinta transportadora.
+  Cuando la puerta se abre, el sistema de seguridad elimina inmediatamente la energia de movimiento del robot y de la cinta transportadora.
   El robot no puede volver a ponerse en marcha hasta que la puerta se cierre y se realice un rearme manual.
 
   Justificación:
@@ -188,11 +188,11 @@
 
   Funcionamiento:
 
-  Cuando una persona introduce una mano o atraviesa la cortina, se interrumpen los haces infrarrojos.
+  Cuando una persona introduce una mano o atraviesa la cortina, se interrunpen los haces infrarrojos.
   El robot y la cinta se detienen inmediatamente.
   Una vez liberada la zona se requiere rearme para volver a operar.
 
-  Justificación:
+  Justificacion:
 
   Permite acceso frecuente sin necesidad de abrir puertas.
   Reduce tiempos de operación durante el cambio de cajas.
@@ -225,12 +225,12 @@
 
   Componente seleccionado: *SICK UE410 o Schneider Preventa XPS*
 
-  Funciones:
+  *Funciones:*
 
-  Supervisión de la cortina óptica.
-  Supervisión de la puerta de mantenimiento.
-  Supervisión de los pulsadores de emergencia.
-  Gestión del rearme manual.
+  - Supervisión de la cortina óptica.
+  - Supervisión de la puerta de mantenimiento.
+  - Supervisión de los pulsadores de emergencia.
+  - Gestión del rearme manual.
 
   == Secuencia de funcionamiento segura
   El robot opera normalmente dentro del cerramiento.
