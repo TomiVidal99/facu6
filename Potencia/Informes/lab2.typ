@@ -137,14 +137,13 @@
     #figure(
       table(
         columns: (auto, auto, auto, auto, auto),
-        align: (center, center, center, center, ),
-
+        align: (center, center, center, center),
+        
         [*C_n*], [*C_i [V]*], [*Velocidad sin torque [rpm]*], [*Velocidad con torque [rpm]*], [*$#math.tau$*],
-        [], [], [], [], []
-        [], [], [], [], []
-        [], [], [], [], []
-        [], [], [], [], []
-
+        [], [], [], [], [],
+        [], [], [], [], [],
+        [], [], [], [], [],
+        [], [], [], [], [],
       ),
       caption: [Mediciones obtenidas],
       placement: top,
@@ -154,9 +153,28 @@
 
   = Respuestas
 
-  1. 
-  2. 
-  3. 
-  4. 
+  == 1
+  #figure(
+    image("Imagenes2/bloques_completo.png", width: 100%),
+    caption: [Diagrama en bloques del sistema completo],
+    supplement: "Figura",
+  )
+
+  #figure(
+    image("Imagenes2/lazo_w.png", width: 100%),
+    caption: [Lazo de control de velocidad],
+    supplement: "Figura",
+  )
+
+  En este lazo de control, se realimenta un conteo de vueltas *n* (proveniente del tacómetro) que luego pasa por un VCO, que posee una constante $K_n = (-3 "mV") / "rpm"$ (hay que notar el símbolo de negativo, que es importante para después); esta tensión es entonces sumada a la tensión *Ref*, puesto que la topología del OPAMP es sumador de tensiones, y como la entrada no inversora está a tierra, entonces la transferencia del bloque será:
+
+  #equation($ V_"ow"/n = (R_6  K_n )/ (R_2 (1-a)) (1 + 1/( s R_6 C )) $)
+
+  _*a* es para representar el porcentaje del potenciómetro._
+
+
+  == 2 
+  == 3 
+  == 4 
 
 ]

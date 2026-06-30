@@ -1,0 +1,15 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\tomii\Github\facu6\Potencia\TP2\SIMULACIONES\Draft2.net
+Start Time: Sun May 24 11:47:10 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.204 seconds.
+
+Files loaded:
+C:\Users\tomii\Github\facu6\Potencia\TP2\SIMULACIONES\Draft2.net
+C:\Users\tomii\AppData\Local\LTspice\lib\sub\UniversalOpAmp2.lib
+
